@@ -15,7 +15,7 @@ const CounterList = ({counters, onIncrement, onDecrement, onSetColor}) => {
     ));
 
     return (
-        <div className="counterList">
+        <div className="CounterList">
             {counterList}
         </div>
     )
