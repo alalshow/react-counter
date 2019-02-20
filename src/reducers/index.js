@@ -28,9 +28,9 @@ function counter(state = initialState, action) {
         case types.DECREMENT:
             return {
                 counters: [
-                    ...counter.slice(0, action.index),
+                    ...counters.slice(0, action.index),
                     {...counters[action.index], number: counters[action.index].number - 1},
-                    ...counter.slice(action.index+1, counters.length)
+                    ...counters.slice(action.index+1, counters.length)
                 ]
             }
         case types.SET_COLOR:
